@@ -1,0 +1,174 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background styling */
+body {
+    background: linear-gradient(to bottom, #87CEFA, #1E90FF); /* Light to deeper blue */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cloud styling */
+.cloud {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 50px 50px 0 -10px #fff, 100px 50px 0 -10px #fff;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cloud:nth-child(2) { left: 20%; animation-delay: 2s; }
+.cloud:nth-child(3) { left: 50%; animation-delay: 4s; }
+.cloud:nth-child(4) { left: 80%; animation-delay: 6s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Weather info styling */
+#weather-info {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Sun styling */
+.sun {
+    background: #FFD700; /* Golden color */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 0 20px #FFD700;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+header h1 {
+    font-weight: 600;
+    color: #4A4A4A; /* Slightly darker text for title */
+    font-size: 2em;
+}
+
+header::before {
+    content: url('path/to/palm_tree_icon.svg'); /* Use an SVG or image URL for the palm tree and person silhouette */
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+/* Main container styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Search Section */
+#search {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#city-search {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #8E8D8A;
+    border-radius: 5px;
+    background-color: #E8E5DF;
+    color: #333;
+    font-size: 1em;
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A3A09F; /* Muted earth-tone button */
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #807D7C; /* Darken on hover */
+}
+
+/* Favorites Section */
+#favorites {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#favorites h2 {
+    font-size: 1.5em;
+    color: #4A4A4A;
+}
+
+#favorites-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#favorites-list li {
+    padding: 8px;
+    border-bottom: 1px solid #A3A09F;
+    color: #333;
+}
+
+#add-favorite {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A3A09F;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#add-favorite:hover {
+    background-color: #807D7C;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    color: #8E8D8A;
+    font-size: 0.9em;
+}

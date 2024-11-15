@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Always Shady Weather Solutions</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external stylesheet -->
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+
+    <!-- Weather info container -->
+    <div id="weather-info"></div>
+    <header>
+        <h1>It's Always Shady Weather Solutions</h1>
+    </header>
+
+
+    <main>
+        <section id="search">
+            <input type="text" id="city-search" placeholder="Enter a city name" />
+            <button id="search-button">Search</button>
+        </section>
+        <section id="weather-results">
+            <h2 id="weather-city"></h2>
+            <p id="weather-description"></p>
+            <p id="weather-temperature"></p>
+        </section>
+        <section id="favorites">
+            <h2>Your Favorite Cities</h2>
+            <ul id="favorites-list">
+                <!-- Favorite cities will be listed here -->
+            </ul>
+            <button id="add-favorite">Add to Favorites</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Weatherstack</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to an external JavaScript file -->
+</body>
+</html>
