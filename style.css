@@ -50,6 +50,8 @@ body {
     margin-top: 20px;
 }
 
+
+
 /* Sun styling */
 .sun {
     background: #FFD700; /* Golden color */
@@ -74,13 +76,13 @@ header h1 {
     color: #4A4A4A; /* Slightly darker text for title */
     font-size: 2em;
 }
-
+/* Use an SVG or image URL for the palm tree and person silhouette 
 header::before {
-    content: url('path/to/palm_tree_icon.svg'); /* Use an SVG or image URL for the palm tree and person silhouette */
+    content: url('path/to/palm_tree_icon.svg'); 
     width: 50px;
     height: auto;
     display: inline-block;
-}
+}*/
 
 /* Main container styling */
 main {
